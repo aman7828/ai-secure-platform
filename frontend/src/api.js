@@ -11,7 +11,7 @@ export async function analyzeContent({ inputType, content, file, options }) {
     formData.append("content", content)
   }
   formData.append("options", JSON.stringify(options))
-  const res = await axios.post(`${BASE}/analyze/`, formData, {
+const res = await axios.post(`${BASE}`, formData, {
     headers: { "Content-Type": "multipart/form-data" },
   })
   return res.data
