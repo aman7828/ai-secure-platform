@@ -1,7 +1,9 @@
-django>=4.2
+django
 djangorestframework
 django-cors-headers
 pymupdf
 python-docx
 anthropic
 python-dotenv
+gunicorn
+whitenoise
